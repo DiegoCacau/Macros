@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/Itemname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/textColor"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/Itemsize"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="0dp"
+        android:layout_below="@id/Itemname"
+
+        android:textColor="@color/textColor"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Itemsize"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/Itemcal_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Cal."
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+                <TextView
+                    android:id="@+id/Itemcal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/Itemprot_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Prot."
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+                <TextView
+                    android:id="@+id/Itemprot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/Itemcarb_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Carb."
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+                <TextView
+                    android:id="@+id/Itemcarb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/Itemgord_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Gord."
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+                <TextView
+                    android:id="@+id/Itemgord"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/Itemfib_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:text="Fib."
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+                <TextView
+                    android:id="@+id/Itemfib"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_weight="5"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

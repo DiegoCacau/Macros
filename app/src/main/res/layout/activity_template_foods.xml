@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="diegocacau.macros.TemplateFoods">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/windowBackground"
+        android:layout_alignParentBottom="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:layout_below="@id/tool_bar">
+
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/firsLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/realName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="Alimento 1 - "
+                            android:textSize="23dp"
+                            android:textColor="@color/textColor"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/sizeUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="10g"
+                            android:textSize="23dp"
+                            android:textColor="@color/textColor"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+
+                            />
+
+                        <!--<Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>-->
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/inputLay"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firsLinear"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="16"
+                        android:text="Número de Porçoes"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/porcoes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_input_border"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/secondRelative"
+                    android:layout_width="fill_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_below="@id/inputLay"
+                    >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:background="@color/colorPrimary"
+                        android:textSize="24dp"
+                        android:textColor="@color/buttonTextColor"
+                        android:text="Macros"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp"
+                    android:layout_below="@id/secondRelative"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Cal."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/Itemcal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Prot."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/Itemprot"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linear1"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Carb."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/Itemcarb"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Gord."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/Itemgord"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linear2"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Fib."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/Itemfib"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/tRelative"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_below="@id/firsLinear"
+                        >
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:background="@color/colorPrimary"
+                            android:text="Restante dos Macros Diários"
+                            android:textAlignment="center"
+                            android:textColor="@color/buttonTextColor"
+                            android:textSize="18dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:paddingTop="30dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Cal."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/FutureCal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Prot."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/FutureProt"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linear4"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Carb."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/FutureCarb"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Gord."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/FutureGord"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linear5"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10"
+                                    android:layout_weight="5">
+
+                                    <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:text="Fib."
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="7"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/FutureFib"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15dp"
+                                        android:paddingTop="5dp"
+                                        android:textColor="@color/textColor"
+                                        android:layout_weight="3"
+                                        />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fRelative"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="10"
+                        android:layout_below="@id/secondLinear"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="30dp">
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:background="@color/colorAccent"
+                            android:text="Adicionar à refeição"
+                            android:textColor="@color/buttonTextColor"
+                            android:layout_weight="8"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="10"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:layout_below="@id/fRelative"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/cancel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingLeft="30dp"
+                            android:paddingRight="30dp"
+                            android:background="#ffb2deda"
+                            android:text="Cancelar"
+                            android:textColor="@color/buttonTextColor"
+                            android:layout_weight="5"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
